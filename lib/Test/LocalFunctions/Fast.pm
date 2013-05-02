@@ -1,5 +1,5 @@
 package Test::LocalFunctions::Fast;
-use 5.008005;
+use 5.010001;
 use strict;
 use warnings;
 
@@ -150,15 +150,18 @@ __END__
 
 =head1 NAME
 
-Test::LocalFunctions::Fast - It's new $module
+Test::LocalFunctions::Fast - Detects unused local function faster
 
 =head1 SYNOPSIS
 
     use Test::LocalFunctions::Fast;
 
+    all_local_functions_ok(); # check modules that are listed in MANIFEST
+
 =head1 DESCRIPTION
 
-Test::LocalFunctions::Fast is ...
+Test::LocalFunctions::Fast is finds unused local functions to clean up the source code. (Local function means the function which name starts from underscore.)
+This module is faster than Test::LocalFunction because using Compiler::Lexer.
 
 =head1 LICENSE
 
@@ -172,4 +175,3 @@ it under the same terms as Perl itself.
 papix E<lt>mail@papix.netE<gt>
 
 =cut
-

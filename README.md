@@ -1,14 +1,18 @@
 # NAME
 
-Test::LocalFunctions::Fast - It's new $module
+Test::LocalFunctions::Fast - Detects unused local function faster
 
 # SYNOPSIS
 
     use Test::LocalFunctions::Fast;
 
+    all_local_functions_ok(); # check modules that are listed in MANIFEST
+
 # DESCRIPTION
 
-Test::LocalFunctions::Fast is ...
+
+Test::LocalFunctions::Fast is finds unused local functions to clean up the source code. (Local function means the function which name starts from underscore.)
+This module is faster than Test::LocalFunction because using Compiler::Lexer.
 
 # LICENSE
 
