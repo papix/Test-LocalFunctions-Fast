@@ -6,7 +6,7 @@ use utf8;
 use FindBin;
 push @INC, "$FindBin::Bin/lib";
 
-use Test::LocalFunctions;
+use Test::LocalFunctions::Fast;
 
 use Test::More;
 

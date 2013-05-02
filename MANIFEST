@@ -1,0 +1,18 @@
+.travis.yml
+Build.PL
+Changes
+cpanfile
+lib/Test/LocalFunctions/Fast.pm
+LICENSE
+MANIFEST			This list of files
+META.json
+README.md
+sample/all_local_functions_ok.pl
+t/00_compile.t
+t/01_self.t
+t/02_succ.t
+t/03_fail.t
+t/lib/Fail1.pm
+t/lib/Fail2.pm
+t/lib/Fail3.pm
+t/lib/Succ1.pm
