@@ -1,9 +1,7 @@
 use strict;
 use Test::More;
 
-use_ok $_ for qw(
-    Test::LocalFunctions::Fast
-);
+use_ok ('Test::LocalFunctions::Fast');
+diag( "Testing Test::LocalFunctions $Test::LocalFunctions::VERSION" );
 
 done_testing;
-
