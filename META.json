@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Detects unused local function faster",
    "author" : [
       "papix <mail@papix.net>"
    ],
@@ -25,11 +25,19 @@
       ]
    },
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::Builder::Tester" : "1.22",
+            "Test::More" : "0.98"
+         }
+      },
       "configure" : {
          "requires" : {
             "CPAN::Meta" : "0",
             "CPAN::Meta::Prereqs" : "0",
-            "Module::Build" : "0.38"
+            "Module::Build" : "0.38",
+            "Test::Builder::Tester" : "1.22",
+            "Test::More" : "0.98"
          }
       },
       "develop" : {
@@ -42,15 +50,28 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
-         }
-      },
-      "test" : {
-         "requires" : {
-            "Test::More" : "0.98"
+            "Compiler::Lexer" : "0",
+            "Sub::Identify" : "0.04",
+            "Test::Builder::Module" : "0.98",
+            "parent" : "0",
+            "perl" : "5.010001"
          }
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/papix/Test-LocalFunctions-Fast/issues"
+      },
+      "homepage" : "https://github.com/papix/Test-LocalFunctions-Fast",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/papix/Test-LocalFunctions-Fast.git",
+         "web" : "https://github.com/papix/Test-LocalFunctions-Fast"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
+   ]
 }

@@ -66,7 +66,6 @@ sub _check_local_functions {
     LOCAL_FUNCTION: for my $local_function (@local_functions) {
         for my $token (@tokens) {
             if ($token->{data} eq $local_function) {
-                warn "find! $local_function\n";
                 last LOCAL_FUNCTION;
             }
         }
@@ -151,6 +150,10 @@ __END__
 =head1 NAME
 
 Test::LocalFunctions::Fast - Detects unused local function faster
+
+=head1 CAUTION
+
+This module was merged to Test::LocalFunctions. Please use Test::LocalFunctions.
 
 =head1 SYNOPSIS
 
